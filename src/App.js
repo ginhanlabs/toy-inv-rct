@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Header from './containers/header/header';
+import LeftNav from './containers/leftNav/leftNav';
+import RightNav from './containers/rightNav/rightNav';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import './assets/bootstrap.min.css'
+
+//const Fragment = React.Fragment;
+
+class App extends Component {
+  render () {
+    return (
+      <div className="container-fluid">
+        <Header></Header>
+        
+        <div className="row">
+          <div className="col-sm-3">
+            <LeftNav></LeftNav>
+          </div>
+          <div className="col-sm-6">
+            <h2>hi</h2>
+          </div>
+          <div className="col-sm-3">
+            <RightNav></RightNav>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
