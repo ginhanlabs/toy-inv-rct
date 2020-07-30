@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Header from './containers/header/header';
+import MainContent from './components/mainContent/mainContent'
 import LeftNav from './containers/leftNav/leftNav';
-import RightNav from './containers/rightNav/rightNav';
+import Details from './containers/details/details';
 
 import './App.css';
 import './assets/bootstrap.min.css'
@@ -15,14 +16,14 @@ class App extends Component {
         <Header></Header>
         
         <div className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-2">
             <LeftNav></LeftNav>
           </div>
-          <div className="col-sm-6">
-            <h2>hi</h2>
+          <div className="col-sm-7">
+            <MainContent></MainContent>
           </div>
           <div className="col-sm-3">
-            <RightNav></RightNav>
+            <Details></Details>
           </div>
         </div>
       </div>
