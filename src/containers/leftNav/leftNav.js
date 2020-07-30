@@ -2,7 +2,7 @@ import React from 'react';
 
 const leftNav = (props) => (
     <div>
-        left nav
+        {props.category} <span>{props.category ? " menu" : ""}</span>
     </div>
 
 );

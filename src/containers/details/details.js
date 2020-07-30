@@ -2,7 +2,7 @@ import React from 'react';
 
 const details = (props) => (
     <div>
-        details
+       {/*  this will be a form  */}
     </div>
 
 );
